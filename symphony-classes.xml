@@ -1,0 +1,1123 @@
+<application name="Symphony" ref="/symphony" version="2.0" description="Classes and Functions">
+	<directory name="Content Views" ref="/symphony/content">
+		<file ref="/symphony/content/class.ajaxreorder.php">
+			<class name="contentAjaxReorder">
+				<function name="view" access="public" line="10"/>
+			</class>
+		</file>
+		<file ref="/symphony/content/content.blueprintscomponents.php">
+			<loads>
+				<class name="AdministrationPage" ref="/symphony/lib/toolkit/class.administrationpage.php"/>
+				<class name="EventManager" ref="/symphony/lib/toolkit/class.eventmanager.php"/>
+				<class name="DatasourceManager" ref="/symphony/lib/toolkit/class.datasourcemanager.php"/>
+			</loads>
+			<class name="contentBlueprintsComponents" extends="AdministrationPage">
+				<function name="__construct" line="9"/>
+				<function name="view" line="15"/>
+			</class>
+		</file>
+		<file ref="/symphony/content/content.blueprintsdatasources.php">
+			<loads>
+				<class name="AdministrationPage" ref="/symphony/lib/toolkit/class.administrationpage.php"/>
+				<class name="DatasourceManager" ref="/symphony/lib/toolkit/class.datasourcemanager.php"/>
+				<class name="SectionManager" ref="/symphony/lib/toolkit/class.sectionmanager.php"/>
+			</loads>
+			<class name="contentBlueprintsDatasources" extends="AdministrationPage">
+				<function name="__viewNew" line="10"/>
+				<function name="__viewEdit" line="14"/>
+				<function name="__form" line="18"/>
+				<function name="__viewInfo" line="652"/>
+				<function name="__actionEdit" line="727"/>
+				<function name="__actionNew" line="745"/>
+				<function name="__formAction" line="749"/>
+				<function name="__injectIncludedElements" line="991"/>
+				<function name="__injectFilters" line="998"/>
+				<function name="__injectAboutInformation" line="1014"/>
+				<function name="__injectVarList" line="1020"/>
+				<function name="__appendAuthorFilter" line="1033"/>
+			</class>
+		</file>
+		<file ref="/symphony/content/content.blueprintsevents.php">
+			<loads>
+				<class name="AdministrationPage" ref="/symphony/lib/toolkit/class.administrationpage.php"/>
+				<class name="EventManager" ref="/symphony/lib/toolkit/class.eventmanager.php"/>
+				<class name="SectionManager" ref="/symphony/lib/toolkit/class.sectionmanager.php"/>
+			</loads>
+			<class name="contentBlueprintsEvents" extends="AdministrationPage">
+				<function name="__viewNew" line="9"/>
+				<function name="__viewEdit" line="13"/>
+				<function name="__viewInfo" line="17"/>
+				<function name="__form" line="21"/>
+				<function name="__actionNew" line="141"/>
+				<function name="__actionEdit" line="145"/>
+				<function name="__formAction" line="163"/>
+				<function name="processDocumentationCode" access="public" method="static" line="386"/>
+				<function name="__injectFilters" line="391"/>
+				<function name="__injectAboutInformation" line="398"/>
+			</class>
+		</file>
+		<file ref="/symphony/content/content.blueprintspages.php">
+			<loads>
+				<class name="AdministrationPage" ref="/symphony/lib/toolkit/class.administrationpage.php"/>
+				<class name="EventManager" ref="/symphony/lib/toolkit/class.eventmanager.php"/>
+				<class name="DatasourceManager" ref="/symphony/lib/toolkit/class.datasourcemanager.php"/>
+				<class name="XsltProcess" ref="/symphony/lib/toolkit/class.xsltprocess.php"/>
+			</loads>
+			<class name="contentBlueprintsPages" extends="AdministrationPage">
+				<function name="__viewIndex" line="11"/>
+				<function name="__viewNew" line="100"/>
+				<function name="__viewEdit" line="104"/>
+				<function name="__form" line="108"/>
+				<function name="__actionNew" line="324"/>
+				<function name="__actionEdit" line="442"/>
+				<function name="__actionIndex" line="593"/>
+			</class>
+		</file>
+		<file ref="/symphony/content/content.blueprintssections.php">
+			<loads>
+				<class name="AdministrationPage" ref="/symphony/lib/toolkit/class.administrationpage.php"/>
+				<class name="SectionManager" ref="/symphony/lib/toolkit/class.sectionmanager.php"/>
+				<class name="FieldManager" ref="/symphony/lib/toolkit/class.fieldmanager.php"/>
+			</loads>
+			<class name="contentBlueprintsSections" extends="AdministrationPage">
+				<function name="__construct" line="13"/>
+				<function name="__viewIndex" line="20"/>
+				<function name="__viewNew" line="87"/>
+				<function name="__viewEdit" line="186"/>
+				<function name="__actionIndex" line="323"/>
+				<function name="__actionNew" line="342"/>
+				<function name="__actionEdit" line="486"/>
+			</class>
+		</file>
+		<file ref="/symphony/content/content.blueprintsutilities.php">
+			<loads>
+				<class name="AdministrationPage" ref="/symphony/lib/toolkit/class.administrationpage.php"/>
+				<class name="XsltProcess" ref="/symphony/lib/toolkit/class.xsltprocess.php"/>
+			</loads>
+			<class name="contentBlueprintsUtilities" extends="AdministrationPage">
+				<function name="__construct" line="10"/>
+				<function name="view" line="16"/>
+				<function name="action" line="132"/>
+			</class>
+		</file>
+		<file ref="/symphony/content/content.login.php">
+			<class name="contentLogin" extends="HTMLPage">
+				<function name="__construct" line="9"/>
+				<function name="build" line="34"/>
+				<function name="view" line="40"/>
+				<function name="__loginFromToken" line="116"/>
+				<function name="action" line="120"/>
+			</class>
+		</file>
+		<file ref="/symphony/content/content.logout.php">
+			<class name="contentLogin" extends="HTMLPage">
+				<function name="__construct" line="7"/>
+				<function name="build" line="13"/>
+				<function name="view" line="17"/>
+			</class>
+		</file>
+		<file ref="/symphony/content/content.publish.php">
+			<loads>
+				<class name="AdministrationPage" ref="/symphony/lib/toolkit/class.administrationpage.php"/>
+				<class name="EventManager" ref="/symphony/lib/toolkit/class.eventmanager.php"/>
+				<class name="SectionManager" ref="/symphony/lib/toolkit/class.sectionmanager.php"/>
+				<class name="AuthorManager" ref="/symphony/lib/toolkit/class.authormanager.php"/>
+			</loads>
+			<class name="contentPublish" extends="AdministrationPage">
+				<function name="__construct" line="12"/>
+				<function name="__switchboard" line="17"/>
+				<function name="view" line="34"/>
+				<function name="__viewIndex" line="42"/>
+				<function name="__actionIndex" line="311"/>
+				<function name="__viewNew" line="358"/>
+				<function name="__actionNew" line="455"/>
+				<function name="__viewEdit" line="532"/>
+				<function name="__actionEdit" line="656"/>
+			</class>
+		</file>
+		<file ref="/symphony/content/content.systemauthors.php">
+			<loads>
+				<class name="AdministrationPage" ref="/symphony/lib/toolkit/class.administrationpage.php"/>
+				<class name="AuthorManager" ref="/symphony/lib/toolkit/class.authormanager.php"/>
+				<class name="SectionManager" ref="/symphony/lib/toolkit/class.sectionmanager.php"/>
+			</loads>
+			<class name="contentSystemAuthors" extends="AdministrationPage">
+				<function name="__construct" line="13"/>
+				<function name="__viewIndex" line="20"/>
+				<function name="__actionIndex" line="94"/>
+				<function name="__viewNew" line="115"/>
+				<function name="__viewEdit" line="119"/>
+				<function name="__form" line="123"/>
+				<function name="__actionNew" line="274"/>
+				<function name="__actionEdit" line="323"/>
+			</class>
+		</file>
+		<file ref="/symphony/content/content.systemextensions.php">
+			<loads>
+				<class name="AdministrationPage" ref="/symphony/lib/toolkit/class.administrationpage.php"/>
+			</loads>
+			<class name="contentSystemExtensions" extends="AdministrationPage">
+				<function name="__viewIndex" line="7"/>
+				<function name="__actionIndex" line="88"/>
+			</class>
+		</file>
+		<file ref="/symphony/content/content.systemlog.php">
+			<class name="contentSystemLog">
+				<function name="__construct" line="7"/>
+				<function name="build" line="11"/>
+			</class>
+		</file>
+		<file ref="/symphony/content/content.systempreferences.php">
+			<loads>
+				<class name="AdministrationPage" ref="/symphony/lib/toolkit/class.administrationpage.php"/>
+			</loads>
+			<class name="contentSystemExtensions" extends="AdministrationPage">
+				<function name="__construct" line="7"/>
+				<function name="view" line="14"/>
+				<function name="action" line="44"/>
+			</class>
+		</file>
+	</directory>
+	<directory name="Library" ref="/symphony/lib">
+		<directory name="Boot" ref="/symphony/lib/boot">
+			<file name="Boot Bundle" ref="/symphony/lib/boot/bundle.php">
+				<loads>
+					<functions name="Utilities" ref="/symphony/lib/boot/func.utilities.php"/>
+					<defines name="Define Constants" ref="/symphony/lib/boot/defines.php"/>
+					<class name="Object" ref="/symphony/lib/boot/class.object.php"/>
+				</loads>
+			</file>
+			<file ref="/symphony/lib/boot/class.object.php">
+				<class name="Object">
+					<function name="__construct" line="7"/>
+					<function name="catalogueParentObjects" access="protected" line="12"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/boot/defines.php">
+				<defines name="Define Constants">
+					<define name="__IN_SYMPHONY__"/>
+					<define name="MANIFEST" ref="/manifest"/>
+					<define name="SYMPHONY" ref="/symphony"/>
+					<define name="EXTENSIONS" ref="/extensions"/>
+					<define name="WORKSPACE" ref="/workspace"/>
+					<define name="LIBRARY" ref="/symphony/lib"/>
+					<define name="ASSETS" ref="/symphony/assets"/>
+					<define name="UTILITIES" ref="/workspace/utilities"/>
+					<define name="DATASOURCES" ref="/workspace/data-sources"/>
+					<define name="EVENTS" ref="/workspace/events"/>
+					<define name="TEXTFORMATTERS" ref="/workspace/text-formatters"/>
+					<define name="PAGES" ref="/workspace/pages"/>
+					<define name="CACHE" ref="/manifest/cache"/>
+					<define name="TMP" ref="/manifest/tmp"/>
+					<define name="LOGS" ref="/manifest/logs"/>
+					<define name="CONFIG" ref="/manifest/config.php"/>
+					<define name="TOOLKIT" ref="/symphony/lib/toolkit"/>
+					<define name="LANG" ref="/symphony/lib/lang"/>
+					<define name="CORE" ref="/symphony/lib/core"/>
+					<define name="BOOT" ref="/symphony/lib/boot"/>
+					<define name="CONTENT" ref="/symphony/content"/>
+					<define name="TEMPLATE" ref="/symphony/template"/>
+					<define name="STARTTIME" method="precision_timer()"/>
+					<define name="TWO_WEEKS" value="72576000"/>
+					<define name="CACHE_LIFETIME" value="TWO_WEEKS"/>
+					<define name="HTTPS" value="$_SERVER['HTTPS']"/>
+					<define name="HTTP_HOST" value="$_SERVER['HTTP_HOST']"/>
+					<define name="REMOTE_ADDR" value="$_SERVER['REMOTE_ADDR']"/>
+					<define name="HTTP_USER_AGENT" value="$_SERVER['HTTP_USER_AGENT']"/>
+					<define name="__SECURE__" value="(HTTPS == 'on')"/>
+					<define name="URL" value="'http' . (defined('__SECURE__') &amp;&amp; __SECURE__ ? 's' : '') . '://' . DOMAIN"/>
+					<define name="ACTIVITY_LOG" ref="/manifest/logs/main"/>
+				</defines>
+			</file>
+			<file ref="/symphony/lib/boot/func.utilities.php">
+				<functions name="Utilities">
+					<function name="redirect" line="10"/>
+					<function name="array_union_simple" line="27"/>
+					<function name="symphony_request_uri" line="36"/>
+					<function name="strallpos" line="43"/>
+					<function name="getcwd_safe" line="56"/>
+					<function name="define_safe" line="60"/>
+					<function name="getCurrentPage" line="64"/>
+					<function name="precision_timer" line="69">
+						<function name="sys_get_temp_dir" line="84"/>
+					</function>
+				</functions>
+			</file>
+		</directory>
+		<directory name="Core" ref="/symphony/lib/core">
+			<file ref="/symphony/lib/core/class.administration.php">
+				<class name="Administration" extends="Symphony">
+					<function name="__construct" line="19"/>
+					<function name="isLoggedIn" access="public" line="26"/>
+					<function name="__buildPage" access="private" line="32"/>
+					<function name="getPageCallback" access="public" line="85"/>
+					<function name="getCurrentPageURL" access="public" line="189"/>
+					<function name="display" access="public" line="193"/>
+					<function name="saveConfig" access="public" line="218"/>
+					<function name="errorPageNotFound" access="public" line="233"/>
+					<function name="uninstall" access="public" line="237" disabled="true"/>
+					<function name="export" access="public" line="285" disabled="true"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/core/class.cacheable.php">
+				<class name="Cacheable" extends="Symphony">
+					<function name="__construct" line="12"/>
+					<function name="__optimise" access="private" line="16"/>
+					<function name="decompressData" access="public" line="20"/>
+					<function name="compressData" access="public" line="25"/>
+					<function name="forceExpiry" access="public" line="30"/>
+					<function name="clean" access="public" line="34"/>
+					<function name="write" access="public" line="56"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/core/class.configuration.php">
+				<class name="Configuration">
+					<function name="__construct" line="12"/>
+					<function name="flush" access="public" line="16"/>
+					<function name="get" access="public" line="20"/>
+					<function name="set" access="public" line="32"/>
+					<function name="remove" access="public" line="44"/>
+					<function name="setArray" access="public" line="57"/>
+					<function name="create" access="public" line="61"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/core/class.cookie.php">
+				<class name="Cookie">
+					<function name="__construct" line="10"/>
+					<function name="get" access="public" line="17"/>
+					<function name="set" access="public" line="22"/>
+					<function name="expire" access="public" line="26"/>
+					<function name="__getDomain" access="public" line="35"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/core/class.datetimeobj.php">
+				<class name="DateTimeObj">
+					<function name="setDefaultTimezone" access="public" method="static" line="7"/>
+					<function name="getGMT" access="public" method="static" line="11"/>
+					<function name="get" access="public" method="static" line="15"/>
+					<function name="getRelativeDate" access="public" method="static" line="33"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/core/class.frontend.php">
+				<loads>
+					<class name="Symphony" ref="/symphony/lib/core/class.symphony.php"/>
+					<class name="XMLDoc" ref="/symphony/lib/toolkit/class.xmldoc.php"/>
+					<class name="Lang" ref="/symphony/lib/toolkit/class.lang.php"/>
+					<class name="Manager" ref="/symphony/lib/toolkit/class.manager.php"/>
+					<class name="FrontendPage" ref="/symphony/lib/toolkit/class.frontendpage.php"/>
+				</loads>
+				<class name="Frontend" extends="Symphony">
+					<function name="__construct" line="15"/>
+					<function name="isLoggedIn" access="public" line="23"/>
+					<function name="display" access="public" line="29"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/core/class.log.php">
+				<loads>
+					<class name="DateTimeObj" ref="/symphony/lib/core/class.datetimeobj.php"/>
+				</loads>
+				<class name="Log">
+					<function name="__construct" line="20"/>
+					<function name="setLogPath" access="public" line="26"/>
+					<function name="getLogPath" access="public" line="30"/>
+					<function name="setArchive" access="public" line="34"/>
+					<function name="setMaxSize" access="public" line="38"/>
+					<function name="__defineNameString" access="public" line="42"/>
+					<function name="pushToLog" access="public" line="65"/>
+					<function name="popFromLog" access="public" line="84"/>
+					<function name="writeToLog" access="public" line="91"/>
+					<function name="getLog" access="public" line="109"/>
+					<function name="open" access="public" line="113"/>
+					<function name="close" access="public" line="143"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/core/class.symphony.php">
+				<loads>
+					<class name="Configuration" ref="/symphony/lib/core/class.configuration.php"/>
+					<class name="DateTimeObj" ref="/symphony/lib/core/class.datetimeobj.php"/>
+					<class name="Log" ref="/symphony/lib/core/class.log.php"/>
+					<class name="Cookie" ref="/symphony/lib/core/class.cookie.php"/>
+					<class name="Page" ref="/symphony/lib/toolkit/class.page.php"/>
+					<class name="XMLElement" ref="/symphony/lib/toolkit/class.xmlelement.php"/>
+					<class name="Widget" ref="/symphony/lib/toolkit/class.widget.php"/>
+					<class name="General" ref="/symphony/lib/toolkit/class.general.php"/>
+					<class name="Profiler" ref="/symphony/lib/toolkit/class.profiler.php"/>
+					<class name="Author" ref="/symphony/lib/toolkit/class.author.php"/>
+					<class name="ExtensionManager" ref="/symphony/lib/toolkit/class.extensionmanager.php"/>
+				</loads>
+				<class name="Symphony">
+					<function name="__construct" line="29"/>
+					<function name="initialiseExtensionManager" access="public" line="73"/>
+					<function name="initialiseDatabase" access="public" line="78"/>
+					<function name="initialiseLog" access="public" line="112"/>
+					<function name="isLoggedIn" access="public" line="126"/>
+					<function name="logout" access="public" line="144"/>
+					<function name="login" access="public" line="148"/>
+					<function name="loginFromToken" access="public" line="170"/>
+					<function name="resolvePageTitle" access="public" line="203"/>
+					<function name="resolvePagePath" access="public" line="209"/>
+					<function name="resolvePage" access="public" line="215"/>
+					<function name="customError" access="public" line="256"/>
+					<function name="__errorHandler" access="public" line="261"/>
+				</class>
+			</file>
+		</directory>
+		<directory name="Language" ref="/symphony/lib/lang">
+			<file name="English Language" ref="/symphony/lib/lang/lang.en.php">
+				<variable name="strings" line="4"/>
+				<variable name="dictionary" line="16"/>
+				<variable name="transliterations" line="19"/>
+			</file>
+		</directory>
+		<directory name="Tool Kit" ref="/symphony/lib/toolkit">
+			<file ref="/symphony/lib/boot/class.object.php">
+				<class name="AdministrationPage" extends="HTMLPage">
+					<function name="__construct" line="15"/>
+					<function name="setPageType" line="26"/>
+					<function name="setTitle" line="30"/>
+					<function name="build" line="34"/>
+					<function name="view" line="84"/>
+					<function name="action" line="88"/>
+					<function name="__switchboard" line="92"/>
+					<function name="pageAlert" line="112"/>
+					<function name="appendAlert" line="130"/>
+					<function name="appendFooter" line="146"/>
+					<function name="appendSubheading" line="167"/>
+					<function name="appendNavigation" line="175"/>
+					<function name="getNavigationArray" line="296"/>
+					<function name="canAccessPage" line="301"/>
+					<function name="__buildNavigation" line="343"/>
+					<function name="__findActiveNavigationGroup" line="470"/>
+					<function name="wrapFormElementWithError" line="494"/>
+					<function name="__fetchAvailablePageTypes" line="503"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/toolkit/class.ajaxpage.php">
+				<loads>
+					<class name="Page" ref="/symphony/lib/toolkit/class.page.php"/>
+				</loads>
+				<class name="AjaxPage" extends="Page">
+					<function name="__construct" line="18"/>
+					<function name="build" access="public" line="32"/>
+					<function name="view" access="public" line="37"/>
+					<function name="handleFailedAuthorisation" access="public" line="41"/>
+					<function name="generate" access="public" line="46"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/toolkit/class.archivezip.php">
+				<class name="ArchiveZip" extends="Page">
+					<function name="__traverse" line="13"/>
+					<function name="addFromFile" access="public" line="40"/>
+					<function name="addFromString" access="public" line="47"/>
+					<function name="addDirectory" access="public" line="57"/>
+					<function name="save" access="public" line="61"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/toolkit/class.archivezip.php">
+				<class name="__ArchiveZipFile" extends="Page">
+					<function name="__set" access="public" line="136"/>
+					<function name="__get" access="public" line="160"/>
+					<function name="__compress" access="public" line="188"/>
+					<function name="isValidFile" access="public" line="193"/>
+					<function name="unixToDOSDateTime" access="public" method="static" line="197"/>
+					<function name="__construct" line="220"/>
+					<function name="renderFileRecord" access="public" line="267"/>
+					<function name="renderCentralDirectoryRecord" access="public" line="286"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/toolkit/class.author.php">
+				<class name="Author">
+					<function name="__construct" line="9"/>
+					<function name="loadAuthor" line="17"/>
+					<function name="loadAuthorFromUsername" line="28"/>
+					<function name="verifyToken" line="37"/>
+					<function name="createAuthToken" line="49"/>
+					<function name="isTokenActive" line="53"/>
+					<function name="isDeveloper" line="57"/>
+					<function name="isPrimaryAccount" line="61"/>
+					<function name="getAuthorAllowableSections" line="69"/>
+					<function name="canAccessSection" line="79"/>
+					<function name="set" line="96"/>
+					<function name="get" line="100"/>
+					<function name="validate" line="105"/>
+					<function name="commit" line="131"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/toolkit/class.authormanager.php">
+				<class name="AuthorManager">
+					<function name="__construct" line="8"/>
+					<function name="&amp;create" line="13"/>
+					<function name="add" line="18"/>
+					<function name="edit" line="26"/>
+					<function name="delete" line="33"/>
+					<function name="fetch" line="46"/>
+					<function name="fetchByID" line="72"/>
+					<function name="fetchByUsername" line="106"/>
+					<function name="deactivateAuthToken" line="119"/>
+					<function name="activateAuthToken" line="123"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/toolkit/class.bitterhtml.php">
+				<class name="BitterLangHTML">
+					<function name="htmlentities" access="public" method="static" line="33"/>
+					<function name="process" access="public" line="37"/>
+					<function name="match" access="protected" line="60"/>
+					<function name="position" access="protected" line="70"/>
+					<function name="slice" access="protected" line="80"/>
+					<function name="contextMain" access="protected" line="85"/>
+					<function name="contextComment" access="protected" line="183"/>
+					<function name="contextElement" access="protected" line="213"/>
+					<function name="contextEntity" access="protected" line="282"/>
+					<function name="contextString" access="protected" line="299"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/toolkit/class.datasource.php">
+				<class name="DataSource">
+					<function name="__construct" line="17"/>
+					<function name="processParameters" line="26"/>
+					<function name="__redirectToErrorPage" line="54"/>
+					<function name="emptyXMLSet" line="65"/>
+					<function name="__appendIncludedElements" line="72"/>
+					<function name="__determineFilterType" line="85"/>
+					<function name="__noRecordsFound" line="89"/>
+					<function name="__processParametersInString" line="93"/>
+					<function name="__findParameterInEnv" line="134"/>
+					<function name="allowEditorToParse" line="149"/>
+					<function name="getSource" line="156"/>
+					<function name="getDependencies" line="160"/>
+					<function name="about" line="165"/>
+					<function name="grab" line="168"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/toolkit/class.datasourcemanager.php">
+				<loads>
+					<class name="Datasource" ref="/symphony/lib/toolkit/class.datasource.php"/>
+				</loads>
+				<class name="DatasourceManager" extends="Manager">
+					<function name="__find" line="10"/>
+					<function name="__getHandleFromFilename" line="28"/>
+					<function name="__getClassName" line="33"/>
+					<function name="__getClassPath" line="37"/>
+					<function name="__getDriverPath" line="41"/>
+					<function name="listAll" line="45"/>
+					<function name="&amp;create" line="112"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/toolkit/class.debugpage.php">
+				<loads>
+					<class name="HTMLPage" ref="/symphony/lib/toolkit/class.htmlpage.php"/>
+					<class name="BitterLangHTML" ref="/symphony/lib/toolkit/class.bitterhtml.php"/>
+				</loads>
+				<class name="DebugPage" extends="HTMLPage">
+					<function name="__buildNavigation" line="10"/>
+					<function name="__appendNavigationItem" access="private" method="static" line="23"/>
+					<function name="__buildJump" line="36"/>
+					<function name="__buildUtilityList" line="56"/>
+					<function name="__buildParams" line="77"/>
+					<function name="__findUtilitiesInXSL" line="92"/>
+					<function name="__buildCodeBlock" line="108"/>
+					<function name="generate" line="135"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/toolkit/class.entry.php">
+				<class name="Entry" extends="Object">
+					<function name="__construct" line="14"/>
+					<function name="set" line="30"/>
+					<function name="get" line="34"/>
+					<function name="fetchAllAssociatedEntryCounts" line="39"/>
+					<function name="checkPostData" line="60"/>
+					<function name="setDataFromPost" line="89"/>
+					<function name="setData" line="121"/>
+					<function name="getData" line="125"/>
+					<function name="findDefaultData" line="130"/>
+					<function name="commit" line="151"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/toolkit/class.entrymanager.php">
+				<loads>
+					<class name="SectionManager" ref="/symphony/lib/toolkit/class.sectionmanager.php"/>
+					<class name="AuthorManager" ref="/symphony/lib/toolkit/class.authormanager.php"/>
+					<class name="TextFormatterManager" ref="/symphony/lib/toolkit/class.textformattermanager.php"/>
+					<class name="Entry" ref="/symphony/lib/toolkit/class.entry.php"/>
+				</loads>
+				<class name="EntryManager">
+					<function name="__construct" line="20"/>
+					<function name="create" line="32"/>
+					<function name="delete" line="37"/>
+					<function name="add" line="80"/>
+					<function name="edit" line="122"/>
+					<function name="fetchByPage" line="163"/>
+					<function name="fetchCount" line="191"/>
+					<function name="setFetchSortingField" line="231"/>
+					<function name="setFetchSortingDirection" line="235"/>
+					<function name="setFetchSorting" line="240"/>
+					<function name="fetch" line="250"/>
+					<function name="__buildEntries" line="311"/>
+					<function name="fetchEntrySectionID" line="387"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/toolkit/class.event.php">
+				<class name="Event">
+					<function name="__construct" line="15"/>
+					<function name="allowEditorToParse" access="public" method="static" line="23"/>
+					<function name="getSource" access="public" method="static" line="30"/>
+					<function name="about" access="public" method="abstract, static" line="34"/>
+					<function name="load" access="public" method="abstract" line="36"/>
+					<function name="__trigger" access="protected" method="abstract" line="38"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/toolkit/class.eventmanager.php">
+				<loads>
+					<class name="Event" ref="/symphony/lib/toolkit/class.event.php"/>
+				</loads>
+				<class name="EventManager" extends="Manager">
+					<function name="__find" line="9"/>
+					<function name="__getClassName" line="27"/>
+					<function name="__getClassPath" line="31"/>
+					<function name="__getDriverPath" line="35"/>
+					<function name="__getHandleFromFilename" line="39"/>
+					<function name="listAll" line="43"/>
+					<function name="&amp;create" line="114"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/toolkit/class.extension.php">
+				<class name="Extension">
+					<function name="__construct" line="13"/>
+					<function name="update" access="public" line="15"/>
+					<function name="enable" access="public" line="17"/>
+					<function name="disable" access="public" line="19"/>
+					<function name="uninstall" access="public" line="21"/>
+					<function name="install" access="public" line="23"/>
+					<function name="about" access="public" line="25"/>
+					<function name="getSubscribedDelegates" access="public" line="27"/>
+					<function name="fetchNavigation" access="public" line="29"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/toolkit/class.extensionmanager.php">
+				<loads>
+					<class name="Manager" ref="/symphony/lib/toolkit/class.manager.php"/>
+					<class name="Extension" ref="/symphony/lib/toolkit/class.extension.php"/>
+				</loads>
+				<class name="ExtensionManager" extends="Manager">
+					<function name="__getClassName" line="13"/>
+					<function name="__getClassPath" line="17"/>
+					<function name="__getDriverPath" line="21"/>
+					<function name="getClassPath" line="25"/>
+					<function name="sortByStatus" line="29"/>
+					<function name="sortByName" line="42"/>
+					<function name="enable" line="70"/>
+					<function name="disable" line="96"/>
+					<function name="fetchStatus" line="128"/>
+					<function name="pruneService" line="137"/>
+					<function name="registerService" line="157"/>
+					<function name="listInstalledHandles" line="199"/>
+					<function name="listAll" line="204"/>
+					<function name="notifyMembers" line="221"/>
+					<function name="&amp;create" line="250"/>
+					<function name="__requiresUpdate" line="291"/>
+					<function name="__requiresInstallation" line="301"/>
+					<function name="fetchInstalledVersion" line="307"/>
+					<function name="fetchExtensionID" line="312"/>
+					<function name="fetchCustomMenu" line="316"/>
+					<function name="__hasCustomInterface" line="332"/>
+					<function name="about" line="337"/>
+					<function name="__cleanupDatabase" line="369"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/toolkit/class.field.php">
+				<class name="Field" extends="Object">
+					<function name="__construct" line="26"/>
+					<function name="canShowTableColumn" access="public" line="49"/>
+					<function name="canToggle" access="public" line="53"/>
+					<function name="canFilter" access="public" line="57"/>
+					<function name="allowDatasourceOutputGrouping" access="public" line="61"/>
+					<function name="allowDatasourceParamOutput" access="public" line="65"/>
+					<function name="mustBeUnique" access="public" line="69"/>
+					<function name="getToggleStates" access="public" line="74"/>
+					<function name="toggleFieldData" access="public" line="77"/>
+					<function name="handle" access="public" line="81"/>
+					<function name="name" access="public" line="85"/>
+					<function name="set" access="public" line="89"/>
+					<function name="entryDataCleanup" access="public" line="93"/>
+					<function name="setFromPOST" access="public" line="99"/>
+					<function name="setArray" access="public" line="106"/>
+					<function name="get" access="public" line="111"/>
+					<function name="remove" access="public" line="117"/>
+					<function name="removeSectionAssociation" access="public" line="121"/>
+					<function name="createSectionAssociation" access="public" line="125"/>
+					<function name="flush" access="public" line="144"/>
+					<function name="displayPublishPanel" access="public" line="148"/>
+					<function name="canPrePopulate" access="public" line="151"/>
+					<function name="appendFormattedElement" access="public" line="155"/>
+					<function name="getParameterPoolValue" access="public" line="159"/>
+					<function name="cleanValue" access="public" line="163"/>
+					<function name="checkFields" access="public" line="167"/>
+					<function name="findDefaults" access="public" line="207"/>
+					<function name="isSortable" access="public" line="210"/>
+					<function name="requiresSQLGrouping" access="public" line="214"/>
+					<function name="buildSortingSQL" access="public" line="218"/>
+					<function name="isFilterRegex" access="protected" method="static" line="223"/>
+					<function name="buildDSRetrivalSQL" access="public" line="227"/>
+					<function name="checkPostFieldData" access="public" line="278"/>
+					<function name="processRawFieldData" access="public" line="299"/>
+					<function name="prepareTableValue" access="public" line="308"/>
+					<function name="getExampleFormMarkup" access="public" line="326"/>
+					<function name="fetchIncludableElements" access="public" line="333"/>
+					<function name="fetchAssociatedEntrySearchValue" access="public" line="337"/>
+					<function name="fetchAssociatedEntryCount" access="public" line="341"/>
+					<function name="fetchAssociatedEntryIDs" access="public" line="344"/>
+					<function name="displayDatasourceFilterPanel" access="public" line="354"/>
+					<function name="buildSummaryBlock" access="public" line="363"/>
+					<function name="appendRequiredCheckbox" access="public" line="379"/>
+					<function name="appendShowColumnCheckbox" access="public" line="392"/>
+					<function name="buildLocationSelect" access="public" line="406"/>
+					<function name="buildFormatterSelect" access="public" line="417"/>
+					<function name="buildValidationSelect" access="public" line="441"/>
+					<function name="groupRecords" access="public" line="456"/>
+					<function name="commit" access="public" line="460"/>
+					<function name="createTable" access="public" line="489"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/toolkit/class.fieldmanager.php">
+				<loads>
+					<class name="Field" ref="/symphony/lib/toolkit/class.field.php"/>
+				</loads>
+				<class name="FieldManager" extends="Object">
+					<function name="__construct" line="11"/>
+					<function name="__find" line="15"/>
+					<function name="__getClassName" line="33"/>
+					<function name="__getClassPath" line="37"/>
+					<function name="__getDriverPath" line="41"/>
+					<function name="&amp;create" line="45"/>
+					<function name="fetchFieldTypeFromID" line="82"/>
+					<function name="fetchFieldIDFromElementName" line="87"/>
+					<function name="fetchTypes" line="95"/>
+					<function name="fetch" line="120"/>
+					<function name="add" line="164"/>
+					<function name="edit" line="177"/>
+					<function name="delete" line="190"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/toolkit/class.frontendpage.php">
+				<loads>
+					<class name="XSLTPage" ref="/symphony/lib/toolkit/class.xsltpage.php"/>
+					<class name="DatasourceManager" ref="/symphony/lib/toolkit/class.datasourcemanager.php"/>
+					<class name="EventManager" ref="/symphony/lib/toolkit/class.eventmanager.php"/>
+					<class name="ExtensionManager" ref="/symphony/lib/toolkit/class.extensionmanager.php"/>
+				</loads>
+				<class name="FrontendPage" extends="HTMLPage">
+					<function name="__construct" line="23"/>
+					<function name="generate" access="public" line="34"/>
+					<function name="__buildPage" access="private" line="99"/>
+					<function name="resolvePage" access="public" line="207"/>
+					<function name="__isSchemaValid" access="private" line="297"/>
+					<function name="resolvePageFileLocation" access="private" method="static" line="306"/>
+					<function name="__buildDatasourcePooledParamList" access="private" line="310"/>
+					<function name="__findDatasourceOrder" access="private" line="323"/>
+					<function name="__processDatasources" access="private" line="363"/>
+					<function name="__processEvents" access="private" line="411"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/toolkit/class.gateway.php">
+				<class name="Gateway">
+					<function name="init" access="public" line="40"/>
+					<function name="isCurlAvailable" access="public" method="static" line="43"/>
+					<function name="setopt" access="public" line="47"/>
+					<function name="exec" access="public" line="122"/>
+					<function name="flush" access="public" line="223"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/toolkit/class.general.php">
+				<class name="General">
+					<function name="sanitize" access="public" method="static" line="17"/>
+					<function name="reverse_sanitize" access="public" method="static" line="29"/>
+					<function name="substr_f" access="public" method="static" line="41"/>
+					<function name="findKeywordsArray" access="public" method="static" line="57"/>
+					<function name="stripEntities" access="public" method="static" line="95"/>
+					<function name="validateString" access="public" method="static" line="108"/>
+					<function name="tabsToSpaces" access="public" method="static" line="124"/>
+					<function name="validateXML" access="public" method="static" line="143"/>
+					<function name="validateURL" access="public" method="static" line="206"/>
+					<function name="nullIfZero" access="public" method="static" line="228"/>
+					<function name="get_class_methods_filter" access="public" method="static" line="248"/>
+					<function name="cleanArray" access="public" method="static" line="274"/>
+					<function name="generatePassword" access="public" method="static" line="294"/>
+					<function name="sendEmail" access="public" method="static" line="316"/>
+					<function name="repeatStr" access="public" method="static" line="389"/>
+					<function name="strPlural" access="public" method="static" line="420"/>
+					<function name="substrmin" access="public" method="static" line="435"/>
+					<function name="substrmax" access="public" method="static" line="449"/>
+					<function name="right" access="public" method="static" line="462"/>
+					<function name="left" access="public" method="static" line="476"/>
+					<function name="realiseDirectory" access="public" method="static" line="491"/>
+					<function name="in_array_multi" access="public" method="static" line="529"/>
+					<function name="in_array_all" access="public" method="static" line="550"/>
+					<function name="processFilePostData" access="public" method="static" line="569"/>
+					<function name="array_find_available_index" access="public" method="static" line="600"/>
+					<function name="array_remove_duplicates" access="public" method="static" line="626"/>
+					<function name="str2array" access="public" method="static" line="665"/>
+					<function name="writeFile" access="public" method="static" line="685"/>
+					<function name="deleteFile" access="public" method="static" line="715"/>
+					<function name="rmdirr" access="public" method="static" line="730"/>
+					<function name="getExtension" access="public" method="static" line="756"/>
+					<function name="listDirStructure" access="public" method="static" line="777"/>
+					<function name="listStructure" access="public" method="static" line="820"/>
+					<function name="listStructureFlat" access="public" method="static" line="886"/>
+					<function name="filemtimeSort" access="public" method="static" line="942"/>
+					<function name="fileSort" access="public" method="static" line="957"/>
+					<function name="fileSortR" access="public" method="static" line="972"/>
+					<function name="countWords" access="public" method="static" line="984"/>
+					<function name="limitWords" access="public" method="static" line="1008"/>
+					<function name="dateDiff" access="public" method="static" line="1050"/>
+					<function name="uploadFile" access="public" method="static" line="1067"/>
+					<function name="formatFilesize" access="public" method="static" line="1094"/>
+					<function name="createXMLDateObject" access="public" method="static" line="1105"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/toolkit/class.htmlpage.php">
+				<loads>
+					<class name="Page" ref="/symphony/lib/toolkit/class.page.php"/>
+				</loads>
+				<class name="HTMLPage" extends="Page">
+					<function name="__construct" line="15"/>
+					<function name="__build" line="29"/>
+					<function name="generate" line="36"/>
+					<function name="setTitle" line="42"/>
+					<function name="addElementToHead" line="46"/>
+					<function name="addScriptToHead" line="53"/>
+					<function name="addStylesheetToHead" line="60"/>
+					<function name="__generateHead" line="66"/>
+					<function name="removeFromHead" line="76"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/toolkit/class.image.php">
+				<class name="Image">
+					<function name="height" access="public" method="static" line="9"/>
+					<function name="width" access="public" method="static" line="13"/>
+					<function name="loadExternal" access="public" method="static" line="17"/>
+					<function name="load" access="public" method="static" line="42"/>
+					<function name="display" access="public" method="static" line="78"/>
+					<function name="save" access="public" method="static" line="88"/>
+					<function name="meta" access="public" method="static" line="97"/>
+					<function name="__render" access="private" method="static" line="110"/>
+					<function name="renderOutputHeaders" access="public" method="static" line="138"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/toolkit/class.imagefilters.php">
+				<class name="ImageFilters">
+					<function name="scale" access="public" method="static" line="15"/>
+					<function name="crop" access="public" method="static" line="25"/>
+					<function name="resize" access="public" method="static" line="58"/>
+					<function name="__fill" access="private" method="static" line="92"/>
+					<function name="colourChannelHex2Dec" access="public" method="static" line="105"/>
+					<function name="__copy" access="public" method="private" line="110"/>
+					<function name="__calculateDestSrcXY" access="private" method="static" line="120"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/toolkit/class.lang.php">
+				<class name="Lang">
+					<function name="__" line="6"/>
+					<function name="_t" line="14"/>
+					<function name="createHandle" line="39"/>
+					<function name="createFilename" line="90"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/toolkit/class.manager.php">
+				<class name="Manager" extends="Object">
+					<function name="__construct" line="10"/>
+					<function name="__destruct" line="15"/>
+					<function name="flush" line="25"/>
+					<function name="about" line="30"/>
+					<function name="__getClassName" line="48"/>
+					<function name="__getClassPath" line="51"/>
+					<function name="__getDriverPath" line="54"/>
+					<function name="__getHandleFromFilename" line="57"/>
+					<function name="listAll" line="60"/>
+					<function name="&amp;create" line="63"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/toolkit/class.mutex.php">
+				<class name="Mutex">
+					<function name="acquire" access="public" method="static" line="5"/>
+					<function name="release" access="public" method="static" line="19"/>
+					<function name="refresh" access="public" method="static" line="27"/>
+					<function name="__createLock" access="private" method="static" line="31"/>
+					<function name="__lockExists" access="private" method="static" line="43"/>
+					<function name="__generateLockFileName" access="private" method="static" line="47"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/toolkit/class.mysql.php">
+				<class name="MySQL">
+					<function name="__construct" line="24"/>
+					<function name="__destruct" line="30"/>
+					<function name="toggleCaching" access="public" line="35"/>
+					<function name="enableCaching" access="public" line="39"/>
+					<function name="disableCaching" access="public" line="43"/>
+					<function name="isCachingEnabled" access="public" line="47"/>
+					<function name="setPrefix" access="public" line="51"/>
+					<function name="isConnected" access="public" line="55"/>
+					<function name="getSelected" access="public" line="59"/>
+					<function name="getConnectionResource" access="public" line="63"/>
+					<function name="connect" access="public" line="67"/>
+					<function name="setCharacterSet" access="public" line="90"/>
+					<function name="setCharacterEncoding" access="public" line="94"/>
+					<function name="select" access="public" line="98"/>
+					<function name="cleanValue" access="public" line="111"/>
+					<function name="cleanFields" access="public" line="120"/>
+					<function name="insert" access="public" line="127"/>
+					<function name="update" access="public" line="209"/>
+					<function name="delete" access="public" line="221"/>
+					<function name="close" access="public" line="225"/>
+					<function name="determineQueryType" access="public" line="229"/>
+					<function name="query" access="public" line="233"/>
+					<function name="extractTargetTablesFromQuery" access="public" line="288"/>
+					<function name="numOfRows" access="public" line="293"/>
+					<function name="getInsertID" access="public" line="297"/>
+					<function name="queryCount" access="public" line="301"/>
+					<function name="fetch" access="public" line="305"/>
+					<function name="fetchRow" access="public" line="332"/>
+					<function name="fetchCol" access="public" line="339"/>
+					<function name="fetchVar" access="public" line="353"/>
+					<function name="flush" access="public" line="360"/>
+					<function name="flushLog" access="public" line="368"/>
+					<function name="__error" access="public" line="372"/>
+					<function name="debug" access="public" line="386"/>
+					<function name="getLastError" access="public" line="392"/>
+					<function name="getStatistics" access="public" line="397"/>
+					<function name="import" access="public" line="415"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/toolkit/class.page.php">
+				<class name="Page">
+					<function name="addHeaderToPage" line="9"/>
+					<function name="generate" line="13"/>
+					<function name="__renderHeaders" line="17"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/toolkit/class.page.php">
+				<class name="Page">
+					<function name="__construct" line="12"/>
+					<function name="__destruct" line="22"/>
+					<function name="parseFile" line="26"/>
+					<function name="parseString" line="37"/>
+					<function name="__parse" line="47"/>
+					<function name="__parseXMLopenTag" line="76"/>
+					<function name="__parseXMLcdata" line="92"/>
+					<function name="__parseXMLcloseTag" line="101"/>
+					<function name="_flush" line="106"/>
+					<function name="getArray" line="111"/>
+					<function name="__error" line="115"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/toolkit/class.profilepage.php">
+				<loads>
+					<class name="HTMLPage" ref="/symphony/lib/toolkit/class.htmlpage.php"/>
+				</loads>
+				<class name="ProfilePage" extends="HTMLPage">
+					<function name="__buildNavigation" line="7"/>
+					<function name="__appendNavigationItem" access="private" method="static" line="24"/>
+					<function name="generate" line="37"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/toolkit/class.profiler.php">
+				<class name="Profiler">
+					<function name="Profiler" line="14"/>
+					<function name="retrieveLast" line="20"/>
+					<function name="retrieveTotalRunningTime" line="24"/>
+					<function name="sample" line="30"/>
+					<function name="retrieve" line="49"/>
+					<function name="retrieveByMessage" line="53"/>
+					<function name="retrieveGroup" line="63"/>
+					<function name="seed" line="75"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/toolkit/class.section.php">
+				<loads>
+					<class name="FieldManager" ref="/symphony/lib/toolkit/class.fieldmanager.php"/>
+				</loads>
+				<class name="Section">
+					<function name="__construct" line="14"/>
+					<function name="fetchAssociatedSections" line="21"/>
+					<function name="set" line="31"/>
+					<function name="get" line="35"/>
+					<function name="addField" line="40"/>
+					<function name="fetchVisibleColumns" line="44"/>
+					<function name="fetchFields" line="48"/>
+					<function name="fetchFilterableFields" line="52"/>
+					<function name="fetchToggleableFields" line="56"/>
+					<function name="fetchFieldsSchema" line="60"/>
+					<function name="commit" line="64"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/toolkit/class.sectionmanager.php">
+				<loads>
+					<class name="Section" ref="/symphony/lib/toolkit/class.section.php"/>
+				</loads>
+				<class name="SectionManager">
+					<function name="__construct" line="12"/>
+					<function name="&amp;create" line="17"/>
+					<function name="fetchIDFromHandle" line="22"/>
+					<function name="fetch" line="26"/>
+					<function name="add" line="57"/>
+					<function name="edit" line="65"/>
+					<function name="delete" line="72"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/toolkit/class.sectionmanager.php">
+				<class name="TextFormatter">
+					<function name="__construct" line="10"/>
+					<function name="about" access="public" method="abstract" line="14"/>
+					<function name="run" access="public" method="abstract" line="16"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/toolkit/class.textformattermanager.php">
+				<loads>
+					<class name="Section" ref="/symphony/lib/toolkit/class.textformatter.php"/>
+				</loads>
+				<class name="TextformatterManager" extends="Manager">
+					<function name="__find" line="9"/>
+					<function name="__getClassName" line="27"/>
+					<function name="__getClassPath" line="31"/>
+					<function name="__getDriverPath" line="35"/>
+					<function name="__getHandleFromFilename" line="39"/>
+					<function name="listAll" line="43"/>
+					<function name="&amp;create" line="80"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/toolkit/class.widget.php">
+				<class name="Widget">
+					<function name="Label" line="5"/>
+					<function name="Input" line="16"/>
+					<function name="Textarea" line="32"/>
+					<function name="Anchor" line="49"/>
+					<function name="Form" line="60"/>
+					<function name="Table" line="78"/>
+					<function name="TableHead" line="92"/>
+					<function name="TableBody" line="119"/>
+					<function name="TableData" line="130"/>
+					<function name="TableRow" line="148"/>
+					<function name="Select" line="160"/>
+					<function name="__SelectBuildOption" line="204"/>
+					<function name="wrapFormElementWithError" line="225"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/toolkit/class.xmldoc.php">
+				<class name="XMLParser">
+					<function name="XMLParser" line="22"/>
+					<function name="parseFromFile" line="28"/>
+					<function name="parseFromString" line="33"/>
+					<function name="getData" line="41"/>
+					<function name="__parse" line="45"/>
+					<function name="__startHandler" line="68"/>
+					<function name="__dataHandler" line="74"/>
+					<function name="__endHandler" line="86"/>
+					<function name="__getNodeFromIndex" line="96"/>
+					<function name="__error" line="102"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/toolkit/class.xmldoc.php">
+				<class name="XmlDoc">
+					<function name="__construct" line="113"/>
+					<function name="__destruct" line="124"/>
+					<function name="parseFile" line="128"/>
+					<function name="parseString" line="134"/>
+					<function name="__flush" line="139"/>
+					<function name="getArray" line="143"/>
+					<function name="__error" line="161"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/toolkit/class.xmlelement.php">
+				<class name="XMLElement">
+					<function name="XMLElement" line="23"/>
+					<function name="getValue" access="public" line="48"/>
+					<function name="getChildren" access="public" line="52"/>
+					<function name="setElementStyle" access="public" line="56"/>
+					<function name="setEncoding" access="public" line="60"/>
+					<function name="setVersion" access="public" line="64"/>
+					<function name="setIncludeHeader" access="public" line="68"/>
+					<function name="setValue" access="public" line="72"/>
+					<function name="setSelfClosingTag" access="public" line="77"/>
+					<function name="setAllowEmptyAttributes" access="public" line="81"/>
+					<function name="setAttributeArray" access="public" line="85"/>
+					<function name="setAttribute" access="public" line="92"/>
+					<function name="getAttribute" access="public" line="96"/>
+					<function name="addProcessingInstruction" access="public" line="100"/>
+					<function name="setDTD" access="public" line="104"/>
+					<function name="appendChild" access="public" line="108"/>
+					<function name="appendChildArray" access="public" line="112"/>
+					<function name="prependChild" access="public" line="116"/>
+					<function name="getNumberOfChildren" access="public" line="120"/>
+					<function name="generate" access="public" line="124"/>
+				</class>
+			</file>
+			<file ref="/symphony/lib/toolkit/class.xsltpage.php">
+				<loads>
+					<class name="Page" ref="/symphony/lib/toolkit/class.page.php"/>
+					<class name="XsltProcess" ref="/symphony/lib/toolkit/class.xsltprocess.php"/>
+				</loads>
+				<class name="XSLTPage" extends="Page">
+					<function name="trapXMLError" line="8"/>
+					<function name="trapXSLError" line="18"/>
+					<function name="__construct" line="34"/>
+					<function name="isXSLTProcessorAvailable" access="public" method="static" line="47"/>
+					<function name="__process" access="private" line="51"/>
+					<function name="process" access="public" line="101"/>
+					<function name="__error" access="private" line="140"/>
+					<function name="isErrors" access="public" line="155"/>
+					<function name="getError" access="public" line="159"/>
+				</class>
+			</file>
+			<file name="Install" ref="/symphony/lib/toolkit/include.install.php">
+				<loads>
+					<functions name="Utilities" ref="/symphony/lib/boot/func.utilities.php"/>
+					<defines name="Define Constants" ref="/symphony/lib/boot/defines.php"/>
+					<class name="Log" ref="/symphony/lib/boot/class.log.php"/>
+					<class name="DateTimeObj" ref="/symphony/lib/core/class.datetimeobj.php"/>
+					<class name="MySQL" ref="/symphony/lib/toolkit/class.mysql.php"/>
+					<class name="XMLElement" ref="/symphony/lib/toolkit/class.xmlelement.php"/>
+					<class name="General" ref="/symphony/lib/toolkit/class.general.php"/>
+					<class name="Widget" ref="/symphony/lib/toolkit/class.widget.php"/>
+				</loads>
+				<functions>
+					<function name="installResult" line="62"/>
+					<function name="writeConfig" line="82"/>
+					<function name="fireSql" line="108"/>
+				</functions>
+				<class name="GeneralExtended" extends="General" line="690">
+					<function name="realiseDirectory" access="public" method="static" line="692"/>
+					<function name="checkRequirement" access="public" method="static" line="714"/>
+				</class>
+				<class name="SymphonyLog" extends="Log" line="759">
+					<function name="SymphonyLog" line="761"/>
+				</class>
+				<class name="Action" line="778">
+					<function name="requirements" line="780"/>
+					<function name="install" line="820"/>
+				</class>
+				<class name="Page" line="1272">
+					<function name="Page" line="1283"/>
+					<function name="setPage" line="1290"/>
+					<function name="getPage" line="1294"/>
+					<function name="setFooter" line="1298"/>
+					<function name="setHeader" line="1302"/>
+					<function name="setContent" line="1306"/>
+					<function name="setTemplateVar" line="1310"/>
+					<function name="render" line="1314"/>
+					<function name="display" line="1327"/>
+				</class>
+				<class name="Display" line="1376">
+					<function name="index" line="1378"/>
+					<function name="requirements" line="1683"/>
+					<function name="uptodate" line="1719"/>
+					<function name="incorrectVersion" line="1727"/>
+					<function name="failure" line="1735"/>
+				</class>
+			</file>
+			<file name="Validators" ref="/symphony/lib/toolkit/util.validators.php">
+				<loads>
+					<file name="Validators" ref="/manifest/validators.php"/>
+				</loads>
+			</file>
+		</directory>
+	</directory>
+</application>
